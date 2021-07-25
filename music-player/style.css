@@ -13,6 +13,10 @@ body {
   font-size: 12px;
 }
 
+a{
+  font-size: 1rem;
+}
+
 .box{
   min-height: 100vh;
   display: flex;
