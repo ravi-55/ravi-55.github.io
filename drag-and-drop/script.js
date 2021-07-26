@@ -32,7 +32,7 @@ function getSavedColumns() {
     completeListArray = JSON.parse(localStorage.completeItems);
     onHoldListArray = JSON.parse(localStorage.onHoldItems);
   } else {
-    backlogListArray = ['Bugs During Admin Authentication', 'Change NavBar Color'];
+    backlogListArray = ['This Application only works on Chrome and Opera right now, I am trying to solve the issue with other browsers', 'Bugs During Admin Authentication', 'Change NavBar Color'];
     progressListArray = ['Admin Login', 'Admin Dashbord'];
     completeListArray = ['Prerequisite', 'Documentation'];
     onHoldListArray = ['Back-End'];
