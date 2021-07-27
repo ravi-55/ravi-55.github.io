@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.logo{
+	width: 40px;
+	height: 40px;
+}
+
+body{
+	background-color: lightgray;
+}
+
+.container{
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.limit{
+	max-height: 50vh;
+	overflow-y: scroll;
+}
