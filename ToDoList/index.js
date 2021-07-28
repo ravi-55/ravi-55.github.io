@@ -22,10 +22,13 @@ function checkTodos() {
 
 // adding items in todos
 $("#add").on("click", (e) => {
-  if ($("input").val() !== "") {
+
+  if ($("input").val() !== "") { // if text field is not Empty
+
   	$("#newTitle").css('border-color', 'lightgray');
-    todo = $("input").val();
-    if(isExist(todo) === false){
+    todo = $("input").val(); // Value of the text field
+
+    if(isExist(todo) === false){ // if list is not exist
 	    let todosData = localStorage.getItem("todos");
 	    if (todosData == null) {
 	      todos = [];
