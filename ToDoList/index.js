@@ -25,16 +25,21 @@ $("#add").on("click", (e) => {
   if ($("input").val() !== "") {
   	$("#newTitle").css('border-color', 'lightgray');
     todo = $("input").val();
-    let todosData = localStorage.getItem("todos");
-    if (todosData == null) {
-      todos = [];
-    } else {
-      todos = JSON.parse(todosData);
-    }
-    todos.push(todo);
-    localStorage.setItem("todos", JSON.stringify(todos));
-    $("input").val("");
-    checkTodos();
+    if(isExist(todo) === false){
+	    let todosData = localStorage.getItem("todos");
+	    if (todosData == null) {
+	      todos = [];
+	    } else {
+	      todos = JSON.parse(todosData);
+	    }
+	    todos.push(todo);
+	    localStorage.setItem("todos", JSON.stringify(todos));
+	    $("input").val("");
+	    checkTodos();
+	   }
+	   else{
+	   	alert("List Already Exist...!!!");
+	   }
   }
   else{
   	$("#newTitle").css('border-color', 'red');
@@ -49,3 +54,15 @@ let removeTodo = (index) => {
   localStorage.setItem("todos", JSON.stringify(todos));
   checkTodos();
 };
+
+// Check if the list is exist or not
+let isExist = (todo) =>{
+	let todosData = JSON.parse(localStorage.getItem("todos"));
+	result = false;
+	for(let index of todosData){
+		if(index === todo){
+			result = true;
+		}
+	} // End of Loop
+	return result;
+}
