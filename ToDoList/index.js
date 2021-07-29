@@ -69,3 +69,6 @@ let isExist = (todo) =>{
 	} // End of Loop
 	return result;
 }
+
+let todosData = JSON.parse(localStorage.getItem("todos"));
+alert(todosData)
