@@ -10,7 +10,6 @@ function checkTodos() {
   } else {
     todos = JSON.parse(dataInLocalStorage);
   }
-  alert(todos)
   let html = "";
   todos.forEach((todo, index) => {
     html += `<div class="alert alert-secondary alert-dismissible fade show m-1" role="alert">
@@ -23,7 +22,7 @@ function checkTodos() {
 
 // adding items in todos
 $("#add").on("click", (e) => {
-
+	alert('clicked')
   if ($("input").val() !== "") { // if text field is not Empty
 
   	$("#newTitle").css('border-color', 'lightgray');
@@ -36,7 +35,6 @@ $("#add").on("click", (e) => {
 	    } else {
 	      todos = JSON.parse(todosData);
 	    }
-	    alert('clicked: ' + todos)
 	    todos.push(todo);
 	    localStorage.setItem("todos", JSON.stringify(todos));
 	    $("input").val("");
@@ -72,5 +70,3 @@ let isExist = (todo) =>{
 	return result;
 }
 
-let todosData = JSON.parse(localStorage.getItem("todos"));
-alert(todosData)
