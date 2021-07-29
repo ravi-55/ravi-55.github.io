@@ -10,6 +10,7 @@ function checkTodos() {
   } else {
     todos = JSON.parse(dataInLocalStorage);
   }
+  alert(todos)
   let html = "";
   todos.forEach((todo, index) => {
     html += `<div class="alert alert-secondary alert-dismissible fade show m-1" role="alert">
@@ -35,6 +36,7 @@ $("#add").on("click", (e) => {
 	    } else {
 	      todos = JSON.parse(todosData);
 	    }
+	    alert('clicked: ' + todos)
 	    todos.push(todo);
 	    localStorage.setItem("todos", JSON.stringify(todos));
 	    $("input").val("");
