@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap-5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	<!-- Boostrap-5-bundle CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!-- Style.css -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<title>Navigation Bar</title>
+	<link rel="icon" type="image/png" href="./favicon.png">
+</head>
+<body>
+	<!-- NavBar -->
+	<div id="home">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<img class="logo" src="./logo.svg">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+				  <a class="nav-link" href="../index.html">Projects</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" href="#home" id="activeHome">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#about" id="activeAbout">About</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#services" id="activeServices">Services</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#tours" id="activeTours">Tours</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		<div class="homeContent">
+			<div class="homeContainer">
+          <h1>scroll project</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
+            neque sunt in? Id, necessitatibus quos quisquam distinctio
+            laudantium fugiat?
+          </p>
+          <a href="#tours" id="activeToursBtn" class="btn btn-lg btn-outline-light">explore tours</a>
+        </div>
+		</div>
+	</div>
+	<!-- End of NavBar -->
+
+	<!-- About -->
+	<div id="about" class="text-center">
+		<span>About</span> <span class="text-primary">US</span>
+	</div>
+
+	<!-- Services -->
+	<div id="services" class="text-center">
+		<span>Our</span> <span class="text-primary">Services</span>
+	</div>
+
+	<!-- Tours -->
+	<div id="tours" class="text-center">
+		<span>Featured</span> <span class="text-primary">Tours</span>
+	</div>
+
+	<!-- Footer -->
+	<footer class="bg-dark text-center">
+	  <div class="text-center text-light p-3">
+		Design and Develope by "Ravi Pardeshi"
+	  </div>
+	</footer>
+	<!-- End of Footer -->
+
+	<!-- Script -->
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

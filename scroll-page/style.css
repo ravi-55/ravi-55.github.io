@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+*{
+	margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+}
+
+.logo{
+	width: 40px;
+	height: 40px;
+}
+
+#home{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-image: url('./bg-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#about{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	text-transform: uppercase;
+	font-size: 4rem;
+	padding-top: 50px;
+	letter-spacing: 7px;
+	font-weight: 700;
+}
+
+#services{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	text-transform: uppercase;
+	font-size: 4rem;
+	padding-top: 50px;
+	letter-spacing: 7px;
+	font-weight: 700;
+}
+
+#tours{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	text-transform: uppercase;
+	font-size: 4rem;
+	padding-top: 50px;
+	letter-spacing: 7px;
+	font-weight: 700;
+}
+
+.navbar{
+	background-color: transparent;
+	font-size: 1.2rem;
+}
+
+.navbar.scrolled {
+  background-color: #0275d8 !important;
+  transition: background-color 200ms linear;
+}
+
+.homeContent{
+	min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.homeContainer h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+.homeContainer p {
+	font-size: 1.1rem;
+  color: #fff;
+  max-width: 25rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+
+.homeContainer a {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .homeContainer p {
+    max-width: 40rem;
+  }
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 70px;
+    margin-top: -70px;
+}
