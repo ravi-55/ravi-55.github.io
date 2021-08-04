@@ -1,6 +1,18 @@
 $(document).ready(function(){
+	
+	// Add and Remove Active Class From NavBar With Scroll
+	$(function(){
+		$("#activeHome").toggleClass('active');
+		$(document).scroll(function(){
+			let size = $(this).scrollTop();
+			$("#activeHome").toggleClass('active', size < 360);
+			$("#activeAbout").toggleClass('active', size > 360 && size < 970);
+			$("#activeServices").toggleClass('active', size > 970 && size < 1600);
+			$("#activeTours").toggleClass('active', size > 1600);
+	  }); // End of Scroll()
+	}); // End of Function().
 
-	// Add and Remove Active Class From NavBar
+	// Add and Remove Active Class From NavBar With Click
 	$("#activeHome").click(function(){
 		$(this).addClass('active');
 		removeActive(["About", "Services", "Tours"])
@@ -41,8 +53,22 @@ $(document).ready(function(){
 	$(function(){
 		$(document).scroll(function(){
 	    var $nav = $(".navbar");
-	    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	    $nav.toggleClass('scrolled', $(this).scrollTop() > $("#about").height());
 	  }); // End of Scroll()
 	}); // End of function()
+
+	// NavBar BG-color
+	$(".navbar-toggler").click(function(event){
+		event.preventDefault();
+		if($(window).width() <= 991){
+			if($(".navbar").hasClass('bg-primary')){
+				$(".navbar").removeClass("bg-primary")
+			}
+			else{
+				$(".navbar").addClass("bg-primary")
+			}
+			
+		}
+	})
 
 }); // End of Ready();
