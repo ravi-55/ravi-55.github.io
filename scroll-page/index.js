@@ -12,38 +12,6 @@ $(document).ready(function(){
 	  }); // End of Scroll()
 	}); // End of Function().
 
-	// Add and Remove Active Class From NavBar With Click
-	$("#activeHome").click(function(){
-		$(this).addClass('active');
-		removeActive(["About", "Services", "Tours"])
-	});
-
-	$("#activeAbout").click(function(){
-		$(this).addClass('active');
-		removeActive(["Home", "Services", "Tours"])
-	});
-
-	$("#activeServices").click(function(){
-		$(this).addClass('active');
-		removeActive(["Home", "About", "Tours"])
-	});
-
-	$("#activeTours").click(function(){
-		$(this).addClass('active');
-		removeActive(["Home", "About", "Services"])
-	});
-
-	$("#activeToursBtn").click(function(){
-		$("#activeTours").addClass('active');
-		removeActive(["Home", "About", "Services"])
-	});
-
-	// Remove "Active" Class From NavBar
-	function removeActive(val){
-		for(let i = 0; i <= 2; i++)
-			$(`#active${val[i]}`).removeClass('active');
-	}
-	
 	// Hide Collapse NavBar
 	$('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
@@ -52,23 +20,23 @@ $(document).ready(function(){
 	// Change NavBar While Scrolling
 	$(function(){
 		$(document).scroll(function(){
-	    var $nav = $(".navbar");
-	    $nav.toggleClass('scrolled', $(this).scrollTop() > $("#about").height());
-	  }); // End of Scroll()
+			if($(window).width() <= 976)
+				$(window).resize();
+			else{
+		    let $nav = $(".navbar");
+		    $nav.toggleClass('bg-primary', $(this).scrollTop() > $nav.height());
+	    }
+  	}); // End of Scroll()
 	}); // End of function()
 
-	// NavBar BG-color
-	$(".navbar-toggler").click(function(event){
-		event.preventDefault();
-		if($(window).width() <= 991){
-			if($(".navbar").hasClass('bg-primary')){
-				$(".navbar").removeClass("bg-primary")
-			}
-			else{
-				$(".navbar").addClass("bg-primary")
-			}
-			
-		}
-	})
+	$(window).resize(function(){
+    let Wsize = $(window).width();
+    let Hsize = $(this).scrollTop();
+		if(Wsize <= 976 || Hsize > $(".navbar").height())
+			$(".navbar").addClass("bg-primary")
+		else
+			$(".navbar").removeClass("bg-primary")
+  });
+	$(window).resize();
 
 }); // End of Ready();
