@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+}
+
+.logo{
+	width: 40px;
+	height: 40px;
+}
+
+.home{
+	margin: auto;
+	padding: 30px;
+	min-height: 100%;
+	background-color: #0275d8;
+	color: white;
+	text-align: center;
+}
+
+.rules{
+	font-size: 1.5rem;
+}
+
+.icons{
+	font-size: 2rem;
+	padding: 20px;
+}
+
+.icons > i{
+	padding: 10px;
+}
+
+.iconsNames{
+	font-size: 3rem;
+}
+
+.playBtn{
+	text-decoration: none;
+	background-color: transparent;
+	color: white;
+	font-size: 1.3rem;
+	border: 1px solid;
+	border-color: white;
+	padding: 5px 20px;
+	margin-top: 20px;
+	transition: all 0.5s;
+}
+
+.playBtn:hover{
+	background-color: white;
+	color: #0275d8;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 7px;
+	transition: all 0.5s;
+}
+
+#playBoard{
+	height: 100vh;
+	padding-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.rounds{
+	font-size: 2rem;
+	color: #0275d8;
+}
+
+.btnInline > button{
+	margin-top: 20px;
+	background-color: white;
+	color: #0275d8;
+	border: none;
+	transition: all 0.5s;
+}
+
+.btnInline > button:hover{
+	font-size: 1.5rem;
+	transition: all 0.5s;
+}
+
+.btnInline:first-child{
+	font-size: 1.5rem;
+}
+
+.playArea{
+	font-size: 2rem;
+	height: 50vh;
+}
+
+.appendIcon{
+	background-color: white;
+	border: none;
+}
+
+#yourChoice > button{
+	color: #5cb85c;
+}
+
+#CPUChoice > button{
+	color: #d9534f;
+}
+
+.youWin, .CPUWin, .draw{
+	font-size: 2rem;
+}
+
+.youWin{
+	background-color: #5cb85c;
+	color: white;
+}
+
+.CPUWin{
+	background-color: #d9534f;
+	color: white;
+}
+
+.draw{
+	background-color: #f0ad4e;
+	color: black;
+}
+
+#reset{
+	text-decoration: none;
+	background-color: transparent;
+	color: #0275d8;
+	font-size: 1.3rem;
+	border: 1px solid;
+	border-color: #0275d8;
+	padding: 5px 20px;
+	margin-top: 20px;
+	transition: all 0.5s;
+}
+
+#reset:hover{
+	background-color: #0275d8;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 7px;
+	transition: all 0.5s;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 1024px){
+	.icons{
+		font-size: 1rem;
+	}
+
+	.iconsNames{
+		font-size: 2rem;
+	}
+	.playArea{
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 491px){
+	.rules{
+		font-size: 1rem;
+	}
+
+	.icons{
+		font-size: 0.5rem;
+	}
+
+	.iconsNames{
+		font-size: 1.3rem;
+	}
+	.playArea{
+		font-size: 1.6rem;
+	}
+	#result{
+		font-size: 1rem;
+	}
+}

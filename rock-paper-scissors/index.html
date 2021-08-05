@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap-5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Boostrap-5-bundle CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!-- Style.css -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<title>Rock-Paper-Scissors</title>
+	<link rel="icon" type="image/png" href="./favicon.png">
+</head>
+<body>
+	<!-- NavBar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	  <div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<img class="logo" src="./logo.svg">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+				  <a class="nav-link" href="../index.html">Projects</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" href="./index.html">Rock-Paper-Scissors</a>
+				</li>
+			  </ul>
+			</div>
+	  </div>
+	</nav>
+	<!-- End of NavBar -->
+
+	<!-- Head -->
+	<div class="home">
+		<!-- Rules -->
+		<div class="rules">
+			Rules : Rock Beats Scissors  ||  Scissors Beats Paper  ||  Paper Beats Rock
+		</div>
+		<!-- Icons -->
+		<div class="icons">
+			<!-- Rock -->
+			<i class="fas fa-hand-rock fa-7x"></i>
+			<!-- Paper -->
+			<i class="fas fa-hand-paper  fa-7x"></i>
+			<!-- Scissors -->	
+			<i class="fas fa-hand-scissors fa-7x"></i>
+		</div>
+		<!-- Icons Names -->
+		<div class="iconsNames">Rock - Paper - Scissors</div>
+		<!-- Play Button -->
+		<div class="mt-4"><a href="#playBoard" class="playBtn">Let's Play</a></div>
+	</div>
+	<!-- End of Head -->
+
+	<!-- Container -->
+	<div class="container">
+
+		<!-- Play Board -->
+		<div id="playBoard">
+
+			<!-- Rounds -->
+			<div class="rounds">Round - <span id="round"></span></div>
+
+			<!-- Score Board -->
+			<div class="row playArea">
+				<div class="col">
+					<span class="text-muted">You</span>
+					<p id="you">0</p>
+					<div id="yourChoice"></div>
+				</div>
+				<div class="col">
+					<span class="text-muted">Ties</span>
+					<p id="ties">0</p>
+					<div id="result">Good Luck</div>
+				</div>
+				<div class="col">
+					<span class="text-muted">CPU</span>
+					<p id="CPU">0</p>
+					<div id="CPUChoice"></div>
+				</div>
+			</div>
+			<!-- End of Score Board -->
+
+			<!-- Choice, Result, CPU-Choice -->
+			<div class="row">
+					<div id="yourChoice" class="col"></div>
+	
+					<div id="result" class="col"></div>
+
+					<div id="CPUChoice" class="col"></div>
+			</div>
+			<!-- End of Score Board -->
+
+			<!-- Btns -->
+				<div class="btnInline">
+					<div>
+						YOU CHOICE :
+					</div>
+					<!-- Rock Btn -->
+					<button id="rockBtn">
+						<i class="fas fa-hand-rock fa-4x"></i>
+					</button>
+
+					<!-- Paper -->
+					<button id="paperBtn">
+						<i class="fas fa-hand-paper fa-4x"></i>
+					</button>
+
+					<!-- Scissors -->	
+					<button id="scissorsBtn">
+						<i class="fas fa-hand-scissors fa-4x"></i>
+					</button>
+				</div>
+				<!-- End of Btn -->
+
+				<button id="reset">Reset</button>
+
+		</div>
+		<!-- End of Play Board -->
+	</div>
+	<!-- End of Container -->
+
+	<!-- Footer -->
+	<footer>
+		Design and Develope by "Ravi Pardeshi"
+	</footer>
+	<!-- End of Footer -->
+
+	<!-- Script -->
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
