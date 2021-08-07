@@ -58,6 +58,23 @@ body{
 	font-weight: 700;
 }
 
+#activeToursBtn{
+		text-decoration: none;
+		text-transform: uppercase;
+		border: 1px solid;
+		border-color: #fff;
+		color: #fff;
+		padding: 10px 20px;
+		transition: all 0.5s;
+}
+
+#activeToursBtn:hover{
+	background-color: #fff;
+	color: #000;
+	letter-spacing: 5px;
+	transition: all 0.5s;
+}
+
 .navbar{
 	background-color: transparent;
 	font-size: 1.2rem;
@@ -85,14 +102,8 @@ body{
 .homeContainer p {
 	font-size: 1.1rem;
   color: #fff;
-  max-width: 25rem;
   margin: 0 auto;
   margin-bottom: 1.25rem;
-}
-
-.homeContainer a {
-	text-transform: uppercase;
-	letter-spacing: 5px;
 }
 
 @media screen and (max-width: 768px) {
