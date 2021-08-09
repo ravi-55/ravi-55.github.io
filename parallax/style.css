@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.logo{
+	width: 40px;
+	height: 40px;
+}
+
+.blankDiv{
+	/*margin: 50% 0;*/
+	height: 50vh;
+}
+
+.parallax{
+	background: url("./bg-image.jpg")
+		no-repeat fixed 100%;
+	background-size: cover;
+}
+
+.inner{
+	padding-top: 30%;
+	padding-bottom: 30%;
+	text-align: center;
+	color: #fff;
+}
+
+.inner > h1 > span{
+	color: #f0ad4e;
+}
+
+.innerDiv{
+	text-align: center;
+	color: #000;
+}
+
+.innerDiv > h1{
+	text-transform: uppercase;
+	font-size: 8rem;
+}
+
+.innerDiv > h1 > span{
+	font-size: 10rem;
+	color: #0275d8;
+}
+
+h1{
+	font-size: 4rem;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+}
