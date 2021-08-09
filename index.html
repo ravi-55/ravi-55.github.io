@@ -1,134 +1,266 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Bootstrap-5 -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap-5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-	<!-- Boostrap-5-bundle CDN -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Boostrap-5-bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-	<!-- Style.css -->
-	<link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
 
-	<title>Projects</title>
-	<link rel="icon" type="image/svg" href="./favicon.svg">
-</head>
+    <title>My Projects</title>
+  </head>
 <body>
-	<!-- NavBar -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-	  <div class="container-fluid">
-		<a class="navbar-brand" href="index.html">
-			<img class="logo" src="./favicon.svg">
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-		  <ul class="navbar-nav">
-			<li class="nav-item">
-			  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="about.html">About</a>
-			</li>
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-	<!-- End of NavBar -->
+  <header>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img class="logo" src="./logo.svg">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- End of NavBar -->
+  </header>
 
-	<!-- Container -->
-	<div class="container">
+  <main>
 
-		<!-- Heading -->
-		<div class="d-flex justify-content-center mt-5">
-			<h1 class="heading">** PROJECTS **</h1>
-		</div>
-		<!-- End of Heading -->
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">My Projects</h1>
+          <p class="lead text-muted">I am a web developer and I enjoy turning complex problems into simple, beautiful and natural designs. Here, I develop some basic projects and Games in HTML, CSS And JavaScript.</p>
+        </div>
+      </div>
+    </section>
 
-		<!-- Row - 1 -->
-		<div class="row">
-			<div class="col-md-4 mt-4">
-				<!-- Card -->
-					<div class="card">
-						<a href="./animeQuotes/index.html">Anime Quotes</a>
-					</div> <!-- End of Card -->
-			</div><!-- End of Col -->
+    <div class="py-5">
+      <div class="container">
 
-			<div class="col-md-4 mt-4">
-				<!-- Card -->
-					<div class="card">
-						<a href="./music-player/index.html">Anime Music Player</a>
-					</div> <!-- End of Card -->
-			</div><!-- End of Col -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <!-- *** Anime Quotes *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/anime-quotes.png">
 
-			<div class="col-md-4 mt-4">
-				<!-- Card -->
-					<div class="card">
-						<a href="./drag-and-drop/index.html">Drag and Drop</a>
-					</div> <!-- End of Card -->
-			</div><!-- End of Col -->
-		</div> <!-- End of Row -->
+              <div class="card-body">
+                <h5 class="card-title">Anime Quotes</h5>
+                <p class="card-text">A quotation/quote is the repetition of a sentence, phrase, or passage from speech or text that someone has said or written.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/animeQuotes/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS, QuoteAPI</small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-		<!-- Row - 2 -->
-		<div class="row">
-			<div class="col-md-4 mt-4">
-				<!-- Card -->
-					<div class="card">
-						<a href="./ToDoList/index.html">To-Do-List</a>
-					</div> <!-- End of Card -->
-			</div><!-- End of Col -->
+          <!-- *** Music Palyer *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/music-player.png">
 
-			<div class="col-md-4 mt-4">
-				<!-- Card -->
-					<div class="card">
-						<a href="./calculator/index.html">Calculator</a>
-					</div> <!-- End of Card -->
-			</div><!-- End of Col -->
+              <div class="card-body">
+                <h5 class="card-title">Music Player</h5>
+                <p class="card-text">As streaming is increasingly being adopted by users, online media players have become essential for consuming media on the internet.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/music-player/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS</small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-			<div class="col-md-4 mt-4">
-				<!-- Card -->
-				<div class="card">
-					<a href="./keepNotes/index.html">Keep Notes</a>
-			  </div> <!-- End of Card -->
-			</div> <!-- End of Col -->
-		</div> <!-- End of Row -->
+          <!-- *** Drag-and-Drop *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/drag-and-drop.png">
 
-		<!-- Row - 3 -->
-		<div class="row">
-			<div class="col-md-4 mt-4">
-				<!-- Card -->
-					<div class="card">
-						<a href="./bg-video/index.html">
-							Background Video
-						</a>
-					</div> <!-- End of Card -->
-			</div><!-- End of Col -->
+              <div class="card-body">
+                <p class="card-text">
+                  <h5 class="card-title">Drag and Drop</h5>
+                  Drag and drop is a very common feature. It is when you "grab" an object and drag it to a different location.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/drag-and-drop/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS, L-Storage</small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-			<div class="col-md-4 mt-4">
-				<!-- Card -->
-					<div class="card">
-						<a href="./scroll-page/index.html">
-							Scroll-Page
-						</a>
-					</div> <!-- End of Card -->
-			</div><!-- End of Col -->
+          <!-- *** To-Do-List *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/to-do-list.png">
 
-			<div class="col-md-4 mt-4">
-			</div><!-- End of Col -->
-		</div> <!-- End of Row -->
+              <div class="card-body">
+                <p class="card-text">
+                  <h5 class="card-title">TODO List</h5>
+                  TODO List are the lists that we generally use to maintain our day to day tasks or list of everything that we have to do. It is helpful in planning our daily schedules.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/ToDoList/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS, L-Storage</small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-	</div><!-- End of Container -->
+          <!-- *** Calculator *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/calculator.png">
 
-	<!-- Footer -->
-	<footer class="bg-dark text-center mt-4">
-	  <div class="text-center text-light p-3">
-		Design and Develope by "Ravi Pardeshi"
-	  </div>
-	</footer>
-	<!-- End of Footer -->
+              <div class="card-body">
+                <p class="card-text">
+                  <h5 class="card-title">Calculator</h5>
+                  An calculator is typically a portable electronic device used to perform calculations, ranging from basic arithmetic to complex mathematics.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/calculator/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- *** Keep Notes *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/keep-notes.png">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <h5 class="card-title">Keep Notes</h5>
+                  When you note something, or when you note it down, you write it down so that you have a record of it. You can also say that a piece of writing notes something when it is recorded there.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/keepNotes/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS, L-Storage</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- *** Background Video *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/background-video.png">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <h5 class="card-title">Background Video</h5>
+                  Video background is a modern web design pattern that makes an HTML5 video act as an animated, interactive, attractive background of your hero header of the whole webpage.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/bg-video/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- *** Scroll Page *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/scroll-project.png">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <h5 class="card-title">Scroll Page</h5>
+                  A simple one page layout with smooth scrolling to an anchor on the same page. It has some logic built in to identify those jump links, and not target other links.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/scroll-page/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- *** Parallax *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/parallax.png">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <h5 class="card-title">Parallax</h5>
+                  Parallax scrolling is a special scrolling technique used in web design where background images throughout a web page move slower than foreground images, creating an illusion of depth on a two-dimensional site.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/parallax/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- *** Tic-Tac-Toe *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/tic-tak-toe.png">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <h5 class="card-title">Tic-Tac-Toe</h5>
+                  Tic-tac-toe, noughts and crosses, or Xs and Os/“X’y O’sies”, is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/tic-tac-toe/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- *** Rock Paper Scissors *** -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./img/rock-paper-scissors.png">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <h5 class="card-title">Rock-Paper-Scissors</h5>
+                  Rock paper scissors is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock", "paper", and "scissors".
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a target="blank" href="https://ravi-55.github.io/rock-paper-scissors/index.html" class="btn btn-sm btn-outline-primary">View</a>
+                  <small class="text-muted">HTML, CSS, JS</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-dark text-light text-center py-5">
+        Design and Develop By "Ravi Pardeshi"
+  </footer>
 </body>
 </html>
