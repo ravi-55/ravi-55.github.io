@@ -1,0 +1,112 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.logo{
+	width: 40px;
+	height: 40px;
+}
+
+.container{
+	min-height: 100%;
+}
+
+.app .controls {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #00acee;
+  padding: 10px 10px;
+}
+
+.app .controls .title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  width: 80px;
+}
+
+.app .controls .type,
+.app .controls .size,
+.app .controls .color {
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.2rem;
+  margin: 0px 15px;
+}
+
+.app .controls .type input {
+  color: #fff;
+  display:none;
+}
+
+.app .controls .type label {
+	color: #fff;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+.app .controls .type input:checked + label {
+  background: #fff;
+  color: #00acee;
+  border-radius: 50%;
+}
+
+.app .controls .color input {
+	width: 70px;
+	height: 18px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: -10px;
+  cursor: pointer;
+}
+
+.app .controls .actions {
+  flex: 1;
+  text-align: right;
+}
+
+.app .controls .actions button {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.app .controls .actions button:hover {
+	background-color: #fff;
+	color: #00acee;
+	transition: all 0.5s;
+}
+
+.screenSizeMsg{
+	position: absolute;
+	padding-top: 30%;
+	width: 100vw;
+	height: 100vh;
+	background-color: #00acee;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600; 
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
