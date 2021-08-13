@@ -58,3 +58,13 @@ footer {
     height: 50px;
     padding-top: 10px;
 }
+
+@media screen and (max-width: 670px){
+	.innerDiv > h1{
+	font-size: 4rem;
+	}
+
+	.innerDiv > h1 > span{
+		font-size: 5rem;
+	}
+}
