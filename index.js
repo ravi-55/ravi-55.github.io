@@ -98,7 +98,7 @@ let projects = [
 		p_in : "HTML, CSS, JS"
 	},
 	{
-		p_img : "./img/vTab.png",
+		p_img : "./img/vtab.png",
 		p_title : "Vertical Tab",
 		p_discription : "Design tabs using HTML, CSS and JavaScript. Tab layout is divided into three elements i.e. tab header, active tab indicator, and tab body. The tabs are designed using flexbox.",
 		view: "https://ravi-55.github.io/vtab/index.html",
