@@ -163,7 +163,7 @@ for(let i = 0; i < item_shows; i++){
 					<h5 class="card-title">${projects[i].p_title}</h5>
 					<p class="card-text">${projects[i].p_discription}</p>
 					<div class="d-flex justify-content-between align-items-center">
-					    <a target="blank" href="https://ravi-55.github.io/music-player/index.html" class="btn btn-sm btn-outline-primary">View</a>
+					    <a target="blank" href="${projects[i].view}" class="btn btn-sm btn-outline-primary">View</a>
 					  <small class="text-muted">${projects[i].p_in}</small>
 					</div>
 				</div>
@@ -201,7 +201,7 @@ function load_cards(id){
 		                <h5 class="card-title">${projects[i].p_title}</h5>
 		                <p class="card-text">${projects[i].p_discription}</p>
 		                <div class="d-flex justify-content-between align-items-center">
-		                    <a target="blank" href="https://ravi-55.github.io/music-player/index.html" class="btn btn-sm btn-outline-primary">View</a>
+		                    <a target="blank" href="${projects[i].view}" class="btn btn-sm btn-outline-primary">View</a>
 		                  <small class="text-muted">${projects[i].p_in}</small>
 		                </div>
 		              </div>
