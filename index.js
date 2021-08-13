@@ -157,7 +157,7 @@ else{
 for(let i = 0; i < item_shows; i++){
 	let card = `<div class="col">
 			<div class="card shadow-lg">
-				<a href="${projects[i].view}"><img src="${projects[i].p_img}" class="card-img-top"></a>
+				<a target="blank" href="${projects[i].view}"><img src="${projects[i].p_img}" class="card-img-top"></a>
 
 				<div class="card-body">
 					<h5 class="card-title">${projects[i].p_title}</h5>
@@ -195,7 +195,7 @@ function load_cards(id){
 		else{
 			let card = `<div class="col">
 		            	<div class="card shadow-lg">
-		              	<a href="${projects[i].view}"><img src="${projects[i].p_img}" class="card-img-top"></a>
+		              	<a target="blank" href="${projects[i].view}"><img src="${projects[i].p_img}" class="card-img-top"></a>
 
 		              <div class="card-body">
 		                <h5 class="card-title">${projects[i].p_title}</h5>
